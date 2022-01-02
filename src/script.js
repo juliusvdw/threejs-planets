@@ -216,23 +216,21 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  */
 const clock = new THREE.Clock()
 
+//Animation to run on load
 const startAnimation = () => {
-    if( camera.position.z > 6 && camera.position.z <= 50){
-        camera.position.z -= 0.4
+    if(camera.position.z > 8){
+        gsap.to(camera.position, {duration:2.5, z:7})
 
     }
+  
 
-    if(camera.position.z > 50  ){
-        camera.position.z -= 0.5
-
-    }
 }
 
 //Add click event to each planet link
 const planetLink = document.querySelectorAll('.planet-link')
 planetLink.forEach(link => {
     link.addEventListener('click', () => {
-        gsap.to(camera.position, {duration:3, z:camera.position.z-50})
+        gsap.to(camera.position, {duration:2.5, z:camera.position.z-50})
     })
 })
 

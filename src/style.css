@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+#content-wrapper {
+    z-index: 999;
+}
+
+#navbar {
+    height: 80px;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+#nav-logo {
+    color: white;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    color: rgb(224, 224, 224);
+    margin-left: auto;
+}
+
+
+#nav-list li {
+margin-right: 30px;
+font-size: 13px;
+letter-spacing: 1px;
+}
+#nav-list li:hover {
+cursor: pointer;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    position: absolute;
+    z-index: 9;
+}
+
+

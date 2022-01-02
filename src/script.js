@@ -192,7 +192,6 @@ directionalLight2.position.set(3.1,1.4,10)
 directionalLight2.intensity = 3
 
 scene.add(directionalLight,directionalLight2)
-// scene.add(directionalLight, directionalLight2)
 // gui.add(directionalLight.position, 'y', -10,10,0.1).name(' 1y')
 // gui.add(directionalLight.position, 'x', -10,10,0.1).name('1 x')
 // gui.add(directionalLight.position, 'z', -10,10,0.1).name('1 z')
